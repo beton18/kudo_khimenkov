@@ -36,13 +36,14 @@ export const Hero = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <Button
-            size="lg"
-            className="text-lg px-8 py-6 hover:scale-105 transition-transform"
-            asChild
-          >
-            <a href="#contacts">{siteConfig.hero.ctaText}</a>
-          </Button>
+          <a href="#contacts">
+            <Button
+              size="lg"
+              className="text-lg px-8 py-6 hover:scale-105 transition-transform"
+            >
+              {siteConfig.hero.ctaText}
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>
