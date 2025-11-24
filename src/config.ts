@@ -1,5 +1,10 @@
 // Конфигурация сайта - меняй здесь основные параметры
 
+const getAssetPath = (path: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${path}`.replace('//', '/');
+};
+
 export const siteConfig = {
   // Основная информация
   siteName: "Khimenkov Kickboxing Podolsk",
@@ -25,7 +30,7 @@ export const siteConfig = {
     title: "Секция кикбоксинга",
     subtitle: "Развивай силу, выносливость и характер",
     ctaText: "Записаться на пробное занятие",
-    backgroundImage: "/assets/devuska-kikbokser.jpg",
+    backgroundImage: getAssetPath("assets/devuska-kikbokser.jpg"),
   },
   
   // О секции
@@ -36,7 +41,7 @@ export const siteConfig = {
       "Мы предлагаем тренировки для детей от 6 лет и взрослых. Занятия проходят в современном зале с профессиональным оборудованием.",
       "Наши воспитанники регулярно участвуют в соревнованиях городского и регионального уровня."
     ],
-    image: "/assets/bokser-v-cernom-remeske-na-zapast-e.jpg",
+    image: getAssetPath("assets/bokser-v-cernom-remeske-na-zapast-e.jpg"),
   },
   
   // Направления/Группы
@@ -46,14 +51,14 @@ export const siteConfig = {
       title: "Детская группа",
       description: "Общая физическая подготовка и базовая техника кикбоксинга для начинающих",
       age: "6-15 лет",
-      image: "/assets/vid-sboku-rebenok-zanimaetsa-boksom.jpg",
+      image: getAssetPath("assets/vid-sboku-rebenok-zanimaetsa-boksom.jpg"),
     },
     {
       id: 2,
       title: "Взрослая группа",
       description: "Интенсивные тренировки для взрослых любого уровня подготовки",
       age: "от 16 лет",
-      image: "/assets/zenskii-bokser-treniruetsa-s-trenerom.jpg",
+      image: getAssetPath("assets/zenskii-bokser-treniruetsa-s-trenerom.jpg"),
     },
   ],
   
@@ -64,7 +69,7 @@ export const siteConfig = {
       name: "Виктор Хименков",
       title: "Главный тренер",
       description: "Мастер спорта, опыт работы 15 лет",
-      image: "/assets/mock.jpg",
+      image: getAssetPath("assets/mock.jpg"),
     },
   ],
   
