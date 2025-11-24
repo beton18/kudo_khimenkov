@@ -19,11 +19,12 @@ npm run dev
 
 ## Фотографии
 
-Поместить фото в `assets/`:
-- hero-bg.jpg - фон главного экрана
-- about-photo.jpg - секция "О нас"
-- group-kids.jpg, group-adults.jpg, group-pro.jpg - направления
-- coach-1.jpg, coach-2.jpg, coach-3.jpg - тренеры
+Поместить фото в `public/assets/`:
+- devuska-kikbokser.jpg - фон главного экрана
+- bokser-v-cernom-remeske-na-zapast-e.jpg - секция "О нас"
+- vid-sboku-rebenok-zanimaetsa-boksom.jpg - детская группа
+- zenskii-bokser-treniruetsa-s-trenerom.jpg - взрослая группа
+- mock.jpg - заглушка
 
 При отсутствии используется mock.jpg
 
